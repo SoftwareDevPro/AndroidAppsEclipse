@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/MainActivityLayout">
+	<TextView android:layout_height="wrap_content"
+		android:layout_alignParentTop="true" android:id="@+id/MainActivityLabel"
+		android:text="Voice Recognition" android:textSize="20sp"
+		android:layout_width="fill_parent" android:gravity="center"></TextView>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/LabelSupportsVr"
+		android:layout_below="@+id/MainActivityLabel"
+		android:layout_alignLeft="@+id/MainActivityLabel" android:text="Supports Voice Recognition?:"
+		android:textSize="15sp" android:layout_marginTop="15px"></TextView>
+	<EditText android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/LabelSupportsVr" 
+		android:layout_below="@+id/MainActivityLabel"
+		android:id="@+id/SupportsVrBox" android:layout_width="fill_parent"></EditText>
+	<Button android:layout_height="wrap_content" android:layout_below="@+id/SupportsVrBox" android:id="@+id/StartVrButton" android:text="Start Voice Recognition" android:layout_width="fill_parent"></Button>
+	<TextView android:layout_height="wrap_content" android:layout_below="@+id/StartVrButton" android:layout_alignLeft="@+id/StartVrButton" android:layout_width="fill_parent" android:text="Voice Recognition Results:" android:id="@+id/LabelVoiceRecognitionResults"></TextView>
+	<EditText android:layout_below="@+id/LabelVoiceRecognitionResults" android:layout_alignLeft="@+id/LabelVoiceRecognitionResults" android:id="@+id/BoxVoiceRecognitionResults" android:layout_width="fill_parent" android:layout_height="fill_parent"></EditText>
+</RelativeLayout>

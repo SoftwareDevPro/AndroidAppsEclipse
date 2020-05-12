@@ -1,0 +1,14 @@
+IMPROVEMENTS:
+
+* Validation on the min/max, min <= max
+
+* clicking on a button forces the update on the min/max
+	currently changing a number and clicking a button
+	subsequently doesn't change the focus. 
+
+* update strings.xml to create strings for the button text instead of
+	hard-coding the strings.
+
+* Add a splash screen
+
+* Add context menus to the last number, min/max boxes, and history text box.

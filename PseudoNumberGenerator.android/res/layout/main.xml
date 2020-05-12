@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/MainActivityLayout"><TextView android:layout_alignParentTop="true" android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="0" android:textSize="36sp" android:gravity="center" android:id="@+id/LastResultTextView"></TextView>
+<TextView android:layout_height="wrap_content" android:layout_below="@+id/LastResultTextView" android:id="@+id/MinimumNumberTextView" android:layout_width="fill_parent" android:text="Minimum Number" android:gravity="center" android:textSize="20sp"></TextView>
+<EditText android:layout_width="wrap_content" android:layout_below="@+id/MinimumNumberTextView" android:layout_height="wrap_content" android:layout_alignLeft="@+id/MinimumNumberTextView" android:layout_alignRight="@+id/MinimumNumberTextView" android:id="@+id/MinimumNumberEditText" android:inputType="number" android:gravity="center"></EditText>
+
+<TextView android:layout_below="@+id/MinimumNumberEditText" android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="Maximum Number" android:id="@+id/MaximumNumberTextView" android:gravity="center" android:textSize="20sp"></TextView>
+<EditText android:layout_below="@+id/MaximumNumberTextView" android:layout_height="wrap_content" android:id="@+id/MaximumNumberEditText" android:layout_width="fill_parent" android:inputType="number" android:gravity="center"></EditText>
+<Button android:layout_width="wrap_content" android:layout_below="@+id/MaximumNumberEditText" android:layout_height="wrap_content" android:id="@+id/NextNumberButton" android:text="Next Number" android:layout_marginLeft="5px" android:layout_marginRight="5px"></Button>
+<TextView android:layout_below="@+id/NextNumberButton" android:layout_alignLeft="@+id/NextNumberButton" android:id="@+id/HistoryTextView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Past Numbers:"></TextView><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ResetButton" android:text="Reset" android:layout_toRightOf="@+id/NextNumberButton" android:layout_below="@+id/MaximumNumberEditText" android:layout_marginLeft="5px" android:layout_marginRight="5px"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ClearHistoryButton" android:text="Clear History" android:layout_below="@+id/MaximumNumberEditText" android:layout_toRightOf="@+id/ResetButton" android:layout_marginLeft="5px" android:layout_marginRight="5px"></Button>
+
+</RelativeLayout>

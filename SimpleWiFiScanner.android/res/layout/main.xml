@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_alignParentTop="true"
+        android:layout_height="wrap_content" android:id="@+id/MainProgramLabel"
+        android:text="Wi-Fi Scanner" android:textSize="28sp"
+        android:layout_width="fill_parent" android:gravity="center"></TextView>
+    <Button android:layout_below="@+id/MainProgramLabel"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MainProgramLabel"
+        android:layout_alignRight="@+id/MainProgramLabel" android:id="@+id/StartScanButton"
+        android:text="@string/button_start_scan_text"></Button>
+    <ScrollView android:id="@+id/ResultsScrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="false" android:layout_below="@+id/StartScanButton" android:scrollbars="horizontal|vertical">
+        <LinearLayout android:layout_height="fill_parent" android:id="@+id/ResultsLinearLayout" android:layout_width="fill_parent">
+            <TextView android:scrollbarAlwaysDrawVerticalTrack="true" android:layout_width="fill_parent" android:text="Scan Results:" android:scrollbars="vertical" android:layout_height="fill_parent" android:id="@+id/ScanResultsTextView"></TextView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
